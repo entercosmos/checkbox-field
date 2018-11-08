@@ -1,4 +1,4 @@
-# ![CheckboxField](https://user-images.githubusercontent.com/44801418/48063098-93a3f380-e1f6-11e8-95ef-5a9d39ef96ae.png) CheckboxField
+# ![CheckboxField](https://user-images.githubusercontent.com/44801418/48109933-0f944f00-e27c-11e8-975c-deaa9baab76a.png) CheckboxField
 
 [![npm package][npm-badge]][npm]
 
