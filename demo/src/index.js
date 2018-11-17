@@ -64,8 +64,8 @@ class Demo extends Component {
                     id={'fld1'}
                     contextId={'recordDetail'}
                     roleId={'editor'}
-                    value={true}
-                    onChange={({id, value}) => log('onChange')({id, value})}
+                    checked={true}
+                    onChange={({id, checked}) => log('onChange')({id, checked})}
                 />
             </Viewport>
             <h5>
@@ -76,8 +76,8 @@ class Demo extends Component {
                     id={'fld1'}
                     contextId={'recordDetail'}
                     roleId={'editor'}
-                    value={false}
-                    onChange={({id, value}) => log('onChange')({id, value})}
+                    checked={false}
+                    onChange={({id, checked}) => log('onChange')({id, checked})}
                 />
             </Viewport>
             <h4>
@@ -92,7 +92,7 @@ class Demo extends Component {
                     contextId={'recordDetail'}
                     roleId={'readOnly'}
                     readOnly={true}
-                    value={true}
+                    checked={true}
                 />
             </Viewport>
             <h5>
@@ -104,7 +104,7 @@ class Demo extends Component {
                     contextId={'recordDetail'}
                     roleId={'readOnly'}
                     readOnly={true}
-                    value={false}
+                    checked={false}
                 />
             </Viewport>
 
@@ -126,7 +126,7 @@ class Demo extends Component {
                     contextId={'recordListItem'}
                     roleId={'readOnly'}
                     readOnly={true}
-                    value={true}
+                    checked={true}
                 />
             </Viewport>
             <h5>
@@ -138,7 +138,7 @@ class Demo extends Component {
                     contextId={'recordListItem'}
                     roleId={'readOnly'}
                     readOnly={true}
-                    value={false}
+                    checked={false}
                 />
             </Viewport>
             <h3>
@@ -159,7 +159,7 @@ class Demo extends Component {
                     contextId={'recordGalleryCard'}
                     roleId={'readOnly'}
                     readOnly={true}
-                    value={true}
+                    checked={true}
                 />
             </Viewport>
             <h5>
@@ -171,7 +171,7 @@ class Demo extends Component {
                     contextId={'recordGalleryCard'}
                     roleId={'readOnly'}
                     readOnly={true}
-                    value={false}
+                    checked={false}
                 />
             </Viewport>
             <h3>
@@ -191,8 +191,8 @@ class Demo extends Component {
                     id={'fld1'}
                     contextId={'recordGridRow'}
                     roleId={'editor'}
-                    value={true}
-                    onChange={({id, value}) => log('onChange')({id, value})}
+                    checked={true}
+                    onChange={({id, checked}) => log('onChange')({id, checked})}
                 />
             </Viewport>
             <h5>
@@ -203,8 +203,8 @@ class Demo extends Component {
                     id={'fld1'}
                     contextId={'recordGridRow'}
                     roleId={'editor'}
-                    value={false}
-                    onChange={({id, value}) => log('onChange')({id, value})}
+                    checked={false}
+                    onChange={({id, checked}) => log('onChange')({id, checked})}
                 />
             </Viewport>
             <h4>
@@ -219,7 +219,7 @@ class Demo extends Component {
                     contextId={'recordGridRow'}
                     roleId={'readOnly'}
                     readOnly={true}
-                    value={true}
+                    checked={true}
                 />
             </Viewport>
             <h5>
@@ -231,7 +231,7 @@ class Demo extends Component {
                     contextId={'recordGridRow'}
                     roleId={'readOnly'}
                     readOnly={true}
-                    value={false}
+                    checked={false}
                 />
             </Viewport>
         </div>
