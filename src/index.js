@@ -1,9 +1,6 @@
 import React from 'react'
+import Switch from '@cmds/switch'
 import PropTypes from 'prop-types'
-import RecordDetailEditor from './contexts/recordDetail/editor'
-import RecordDetailReadOnly from './contexts/recordDetail/readOnly'
-import RecordGalleryCard from './contexts/recordGalleryCard'
-import RecordListItem from './contexts/recordListItem'
 
 export default class CheckboxField extends React.Component {
 
@@ -15,46 +12,34 @@ export default class CheckboxField extends React.Component {
         onChange: PropTypes.func
     }
 
+    static defaultProps = {
+        checked: false
+    }
+
     render() {
 
-        const {contextId, roleId} = this.props
+        const {contextId, roleId, id, checked} = this.props
 
-        if (contextId === 'recordDetail' && roleId === 'editor') {
-            return (
-                <RecordDetailEditor
-                    {...this.props}
-                />
-            )
-        }
-
-        if (contextId === 'recordDetail' && roleId === 'readOnly') {
-            return (
-                <RecordDetailReadOnly
-                    {...this.props}
-                />
-            )
-        }
-
-        if (contextId === 'recordGalleryCard') {
-            return (
-                <RecordGalleryCard
-                    {...this.props}
-                />
-            )
-        }
-
-        if (contextId === 'recordListItem') {
-            return (
-                <RecordListItem
-                    {...this.props}
-                />
-            )
-        }
+        const disabled = roleId === 'readOnly'
+        const width = ['recordGalleryCard', 'recordListItem'].includes(contextId) ? 24 : undefined
 
         return (
-            <div>
-                Not supported
-            </div>
+            <Switch
+                id={id}
+                width={width}
+                disabled={disabled}
+                value={checked}
+                onChange={this.handleChange}
+            />
         )
+    }
+
+    handleChange = ({value}) => {
+        if (this.props.onChange) {
+            this.props.onChange({
+                id: this.props.id,
+                checked: value
+            })
+        }
     }
 }

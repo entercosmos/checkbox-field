@@ -1,6 +1,6 @@
 {
   "name": "@cmds/checkbox-field",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "Used for making a choice between yes and no.",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -11,7 +11,7 @@
     "umd"
   ],
   "scripts": {
-    "deploy": "cd demo/dist && surge",
+    "deploy": "cd demo/dist && surge --domain cmds-checkbox-field.surge.sh",
     "build": "nwb build-react-component",
     "clean": "nwb clean-module && nwb clean-demo",
     "prepublishOnly": "npm run build",
@@ -21,6 +21,7 @@
     "test:watch": "nwb test-react --server"
   },
   "dependencies": {
+    "@cmds/switch": "^0.1.0",
     "emotion": "^9.2.12"
   },
   "peerDependencies": {
