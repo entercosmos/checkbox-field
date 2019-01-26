@@ -1,5 +1,7 @@
 # ![CheckboxField](https://user-images.githubusercontent.com/44801418/48109933-0f944f00-e27c-11e8-975c-deaa9baab76a.png) CheckboxField
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/entercosmos/checkbox-field.svg)](https://greenkeeper.io/)
+
 [![npm package][npm-badge]][npm]
 
 Used for making a choice between yes and no.
