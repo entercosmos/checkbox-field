@@ -1,6 +1,6 @@
 {
   "name": "@cmds/checkbox-field",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Used for making a choice between yes and no.",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -21,11 +21,11 @@
     "test:watch": "nwb test-react --server"
   },
   "dependencies": {
-    "@cmds/switch": "^0.1.0",
-    "emotion": "^9.2.12"
   },
   "peerDependencies": {
-    "react": "16.x"
+    "react": "16.x",
+    "emotion": "^9.x",
+    "@cmds/switch": "^0.x"
   },
   "devDependencies": {
     "nwb": "0.23.x",
