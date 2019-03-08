@@ -24,8 +24,8 @@
   },
   "peerDependencies": {
     "react": "16.x",
-    "emotion": "^9.x",
-    "@cmds/switch": "^0.x"
+    "emotion": "9.x",
+    "@cmds/switch": "0.x"
   },
   "devDependencies": {
     "nwb": "0.23.x",
