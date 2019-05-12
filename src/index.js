@@ -1,5 +1,5 @@
 import React from 'react'
-import Switch from '@cmds/switch'
+import Switch from '@pndr/switch'
 import PropTypes from 'prop-types'
 
 export default class CheckboxField extends React.Component {
@@ -21,7 +21,7 @@ export default class CheckboxField extends React.Component {
         const {contextId, roleId, id, checked} = this.props
 
         const disabled = roleId === 'readOnly'
-        const width = ['recordGalleryCard', 'recordListItem'].includes(contextId) ? 24 : undefined
+        const width = ['recordGalleryCard', 'recordListItem'].includes(contextId) ? 24 : 38
 
         return (
             <Switch
